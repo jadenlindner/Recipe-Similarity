@@ -369,6 +369,9 @@ int main(int, char const**) {
 
             // insert recipes into tree and heap and time them
             // timer code from https://www.techiedelight.com/measure-elapsed-time-program-chrono-library/
+            heapTime = 0;
+            rbTime = 0;
+            
             for (auto member : matchingRecipes) {
                 string name = member.first;
                 int num = member.second;
